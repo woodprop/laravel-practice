@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,3 +13,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('id{id?}/', 'UserController@user');
+
+Route::view('form/', 'form');
+
+Route::post('form/', function () {
+    echo 'Форма принята';
+});
+
