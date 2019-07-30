@@ -22,3 +22,7 @@ Route::post('form/', function () {
     echo 'Форма принята';
 });
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
