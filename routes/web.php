@@ -10,19 +10,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('id{id?}/', 'UserController@user');
-
-Route::view('form/', 'form');
-
-Route::post('form/', function () {
-    echo 'Форма принята';
-});
-
+Route::get('/', 'HomeController@index')->name('home');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/cabinet', 'Cabinet\HomeController@index')->name('cabinet');

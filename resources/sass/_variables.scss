@@ -1,10 +1,15 @@
 // Body
-$body-bg: #f8fafc;
+$body-bg: #fff;
 
 // Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
+$font-family-sans-serif: 'Montserrat', sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
+
+//Navbar
+$navbar-dark-color:             rgba(#fff, .8);
+$navbar-dark-hover-color:       rgba(#fff, .95);
+
 
 // Colors
 $blue: #3490dc;
@@ -17,3 +22,9 @@ $yellow: #ffed4a;
 $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
+
+$primary:       #337ab7;
+$success:       #4db24d;
+$info:          #5dc0de;
+$warning:       #f0ad4e;
+$danger:        #d9534f;
